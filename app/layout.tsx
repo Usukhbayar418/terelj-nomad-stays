@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { LanguageProvider } from "@/lib/i18n/LanguageContext";
 import Header from "@/components/Header";
@@ -96,6 +97,7 @@ export default function RootLayout({
           <Footer />
         </LanguageProvider>
       </body>
+      <GoogleAnalytics gaId="G-0X255VQDLR" />
     </html>
   );
 }
