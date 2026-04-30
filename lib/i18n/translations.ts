@@ -260,7 +260,7 @@ const mn: Dict = {
   contact: {
     title: "Холбоо барих",
     subtitle: "Захиалга, нэмэлт мэдээлэл авах бол бидэнтэй холбогдоорой",
-    phone: "+976 9982 2851",
+    phone: "+976 88849073",
     ig: "@nomad_terelj",
     airbnb: "Airbnb: Nomad Riverside Stay Terelj",
     notesTitle: "Нэмэлт мэдээлэл",
@@ -407,7 +407,7 @@ const en: Dict = {
   contact: {
     title: "Contact",
     subtitle: "Reach out for booking and more information",
-    phone: "+976 9982 2851",
+    phone: "+976 88849073",
     ig: "@nomad_terelj",
     airbnb: "Airbnb: Nomad Riverside Stay Terelj",
     notesTitle: "Notes",
