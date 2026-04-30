@@ -8,10 +8,11 @@ export default function ContactPage() {
   const { t } = useLanguage();
 
   // Update these with real values
-  const WHATSAPP_NUMBER = "97699822851"; // No +, no spaces
+  const WHATSAPP_NUMBER = "97688849073"; // No +, no spaces
   const IG_URL = "https://instagram.com/nomad_terelj?igsh=b2g4cjZpODdsZnBz";
-  const AIRBNB_URL = "https://airbnb.com/";
-
+  const AIRBNB_URL =
+    "https://www.airbnb.com/rooms/1585896547879077289?unique_share_id=b0892238-f7d7-4643-94fe-aa2f22faf723&viralityEntryPoint=1&s=76&source_impression_id=p3_1777535833_P3lOtvKZG-Wc0l8f";
+    
   const channels = [
     {
       label: "WhatsApp",
