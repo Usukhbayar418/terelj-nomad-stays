@@ -69,6 +69,16 @@ export default function Footer() {
                   {t.nav.packages}
                 </Link>
               </li>
+              <li>
+                <Link href="/faq" className="hover:text-white">
+                  FAQ
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-white">
+                  {t.nav.contact}
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
