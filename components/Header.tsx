@@ -14,6 +14,7 @@ export default function Header() {
     { href: "/tours", label: t.nav.tours },
     { href: "/activities", label: t.nav.activities },
     { href: "/packages", label: t.nav.packages },
+    { href: "/blog", label: t.nav.blog },
     { href: "/contact", label: t.nav.contact },
   ];
 

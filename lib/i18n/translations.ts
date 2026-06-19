@@ -15,6 +15,7 @@ type Dict = {
     tours: string;
     activities: string;
     packages: string;
+    blog: string;
     contact: string;
     bookNow: string;
   };
@@ -137,6 +138,7 @@ const mn: Dict = {
     tours: "Аялал",
     activities: "Үйл ажиллагаа",
     packages: "Багц",
+    blog: "Блог",
     contact: "Холбоо барих",
     bookNow: "Захиалга өгөх",
   },
@@ -289,6 +291,7 @@ const en: Dict = {
     tours: "Tours",
     activities: "Activities",
     packages: "Packages",
+    blog: "Blog",
     contact: "Contact",
     bookNow: "Book Now",
   },
