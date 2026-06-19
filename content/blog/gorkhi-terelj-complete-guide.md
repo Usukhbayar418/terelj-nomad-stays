@@ -1,7 +1,7 @@
 ---
 title: "Gorkhi-Terelj National Park: A Complete Travel Guide"
 description: "Everything you need to know about visiting Gorkhi-Terelj National Park — Mongolia's most beautiful and accessible wilderness, just 70 km from Ulaanbaatar."
-date: "2026-05-01"
+date: "2026-06-18"
 image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1600&q=80"
 imageAlt: "Mountains and valleys of Gorkhi-Terelj National Park, Mongolia"
 author: "Nomad Riverside Stay Terelj"

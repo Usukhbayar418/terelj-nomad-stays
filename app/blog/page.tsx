@@ -4,6 +4,12 @@ import { getAllPosts, formatPostDate } from "@/lib/blog";
 import PageHero from "@/components/PageHero";
 import { images } from "@/lib/images";
 
+// Read markdown files at build time and bake the post list into the
+// static HTML. This is the only way the blog list can show up on
+// Cloudflare Workers, where the filesystem isn't available at runtime.
+export const dynamic = "force-static";
+export const revalidate = false;
+
 export default function BlogIndexPage() {
   const posts = getAllPosts();
 

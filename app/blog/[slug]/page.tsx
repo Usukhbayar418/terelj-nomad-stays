@@ -9,6 +9,13 @@ import { SITE } from "@/lib/site";
 
 type Params = { slug: string };
 
+// Pre-render every post at build time and don't allow any other slug
+// to be served at runtime. Same reason as the blog index: the worker
+// can't read the markdown files at request time.
+export const dynamic = "force-static";
+export const dynamicParams = false;
+export const revalidate = false;
+
 export async function generateStaticParams(): Promise<Params[]> {
   return getAllSlugs().map((slug) => ({ slug }));
 }
