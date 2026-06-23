@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "node scripts/build-blog-data.mjs",
     "dev": "next dev",
+    "prebuild": "node scripts/build-blog-data.mjs",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "build-blog": "node scripts/build-blog-data.mjs"
   },
   "dependencies": {
     "@next/third-parties": "^16.2.4",
