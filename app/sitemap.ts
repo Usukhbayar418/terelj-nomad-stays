@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { SITE } from "@/lib/site";
-import { getAllPosts } from "@/lib/blog";
+import { BLOG_POSTS } from "@/lib/blog-data.generated";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -24,7 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Add every blog post automatically so Google indexes new articles
   // as soon as they're published.
-  const blogPosts: MetadataRoute.Sitemap = getAllPosts().map((post) => ({
+  const blogPosts: MetadataRoute.Sitemap = BLOG_POSTS.map((post) => ({
     url: `${SITE.url}/blog/${post.slug}`,
     lastModified: new Date(post.date),
     changeFrequency: "monthly",
