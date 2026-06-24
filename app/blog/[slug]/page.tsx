@@ -9,13 +9,10 @@ import { SITE } from "@/lib/site";
 
 type Params = { slug: string };
 
-// Pre-render every post at build time and don't allow any other slug
-// to be served at runtime. Same reason as the blog index: the worker
-// can't read the markdown files at request time.
-export const dynamic = "force-static";
-export const dynamicParams = false;
-export const revalidate = false;
-
+// Pre-render every known post at build time. We intentionally don't
+// set `dynamic = "force-static"` or `dynamicParams = false` here —
+// the OpenNext / Cloudflare Workers adapter is more reliable when we
+// just use the default SSG behavior driven by generateStaticParams.
 export async function generateStaticParams(): Promise<Params[]> {
   return getAllSlugs().map((slug) => ({ slug }));
 }
