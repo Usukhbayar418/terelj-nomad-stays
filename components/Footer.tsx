@@ -70,6 +70,14 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link
+                  href="/booking"
+                  className="hover:text-white font-semibold text-emerald-300"
+                >
+                  Book Now
+                </Link>
+              </li>
+              <li>
                 <Link href="/blog" className="hover:text-white">
                   Blog
                 </Link>

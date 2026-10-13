@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     route("/tours"),
     route("/activities"),
     route("/packages"),
+    route("/booking"),
     route("/blog"),
     route("/faq"),
     route("/contact"),

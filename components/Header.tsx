@@ -81,7 +81,7 @@ export default function Header() {
             </div>
 
             <Link
-              href="/contact"
+              href="/booking"
               className="hidden sm:inline-flex items-center rounded-full bg-emerald-700 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-800 transition-colors"
             >
               {t.nav.bookNow}
@@ -138,7 +138,7 @@ export default function Header() {
               ))}
               <li>
                 <Link
-                  href="/contact"
+                  href="/booking"
                   onClick={() => setOpen(false)}
                   className="mt-2 block rounded-md bg-emerald-700 px-3 py-2 text-center text-sm font-semibold text-white hover:bg-emerald-800"
                 >
