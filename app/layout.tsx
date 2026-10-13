@@ -6,6 +6,7 @@ import { LanguageProvider } from "@/lib/i18n/LanguageContext";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import StructuredData from "@/components/StructuredData";
+import WelcomeModal from "@/components/WelcomeModal";
 import { SITE } from "@/lib/site";
 
 const geistSans = Geist({
@@ -95,6 +96,7 @@ export default function RootLayout({
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />
+          <WelcomeModal />
         </LanguageProvider>
       </body>
       <GoogleAnalytics gaId="G-0X255VQDLR" />
